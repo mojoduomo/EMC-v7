@@ -25,7 +25,7 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 ul { list-style: none; }
 .container { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gut); }
-.eyebrow { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.eyebrow { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
 
 /* NAV */
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(250,250,248,0.94); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--rule); transition: all 0.4s; }
@@ -60,14 +60,14 @@ ul { list-style: none; }
 .hero__sub { font-size: 16px; font-weight: 300; line-height: 1.75; color: rgba(250,250,248,0.75); max-width: 520px; margin-bottom: 36px; }
 .stats { margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(250,250,248,0.06); display: flex; gap: clamp(32px,4vw,56px); flex-wrap: wrap; }
 .stat { border-left: 2px solid var(--gold); padding-left: 16px; }
-.stat__num { font-family: var(--serif); font-size: 28px; font-weight: 300; color: rgba(250,250,248,0.9); line-height: 1.1; }
-.stat__label { font-family: var(--mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(250,250,248,0.45); margin-top: 4px; }
+.stat__num { font-family: var(--serif); font-size: 36px; font-weight: 300; color: rgba(250,250,248,0.9); line-height: 1.1; }
+.stat__label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(250,250,248,0.45); margin-top: 4px; }
 
 /* SECTIONS */
 .section { padding: clamp(64px,8vw,100px) 0; }
 .section--alt { background: var(--off); }
 .section--dark { background: var(--navy-deep); color: #FAFAF8; }
-.section__title { font-family: var(--serif); font-size: clamp(28px,3.5vw,42px); font-weight: 400; color: var(--navy); margin-bottom: 14px; line-height: 1.2; }
+.section__title { font-family: var(--serif); font-size: clamp(30px,3.8vw,46px); font-weight: 400; color: var(--navy); margin-bottom: 14px; line-height: 1.2; }
 .section--dark .section__title { color: #FAFAF8; }
 .section__sub { font-size: 15px; color: var(--mid); max-width: 500px; margin-bottom: clamp(32px,4vw,48px); line-height: 1.65; }
 .section--dark .section__sub { color: rgba(250,250,248,0.55); }
