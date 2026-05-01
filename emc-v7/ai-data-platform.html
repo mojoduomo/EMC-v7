@@ -6,12 +6,12 @@
 <p class="article__pull">DLMS/COSEM was designed in the 1990s for scheduled batch reads over serial links. It encodes meter data in binary ASN.1 structures that require proprietary middleware to decode. No ML pipeline, no time-series database, no stream processor can ingest it natively.</p>
 </div></header>
 <div class="article__content">
-<p>Every smart meter on the African continent today transmits data in this format. The data arrives at the utility head-end, gets translated through middleware, stored in a proprietary database, and sits there. The institutions that could act on it &mdash; banks, insurers, grid planners, AI systems &mdash; cannot access it without another translation layer that rarely gets built.</p>
+<p>Every deployed smart meter today transmits data in this format. The data arrives at the utility head-end, gets translated through middleware, stored in a proprietary database, and sits there. The institutions that could act on it &mdash; banks, insurers, grid planners, AI systems &mdash; cannot access it without another translation layer that rarely gets built.</p>
 <h2>What EMC does differently</h2>
 <p>EMC meters transmit every event as structured JSON over MQTTS. No proprietary encoding. No middleware translation. Every consumption event, every payment, every tamper alert arrives as a natively structured data asset &mdash; directly compatible with ML pipelines, time-series databases, and stream processors.</p>
 <p>The protocol choice is the product decision. MQTTS provides lightweight, secure, publish-subscribe messaging designed for constrained networks. The TLS layer ensures integrity without HTTPS overhead. The JSON payload is self-describing. The data is immediately useful to any modern system.</p>
 <h2>The leapfrog</h2>
-<p>Every KPLC tender, every KEBS standard embeds IEC 62055/62056 &mdash; which mandates DLMS/COSEM and STS. EMC's dual-stack architecture satisfies every line item while delivering capabilities the spec does not know to ask for. The cost to manufacture dual-stack is the same. The unit economics are the same. But the output is fundamentally different.</p>
+<p>Utility procurement specifications worldwide embed IEC 62055/62056 &mdash; which mandates DLMS/COSEM and STS. EMC's dual-stack architecture satisfies every line item while delivering capabilities the spec does not know to ask for. The cost to manufacture dual-stack is the same. The unit economics are the same. But the output is fundamentally different.</p>
 <p>A DLMS meter produces binary blobs. An MQTTS meter produces structured data assets. The difference is not a feature. It is a generation.</p>
 </div>
 <nav class="article-nav"><a href="insights.html">&larr; All Insights</a><a href="device-control.html">Device Control &rarr;</a></nav>
