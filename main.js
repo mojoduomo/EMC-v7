@@ -96,3 +96,14 @@
     document.head.appendChild(style);
   }
 })();
+
+// Stat tap feedback — brief flash on click/tap
+document.querySelectorAll('.stat').forEach(function(stat) {
+  stat.addEventListener('click', function() {
+    stat.style.transition = 'background 0.1s';
+    stat.style.background = 'rgba(250,250,248,0.06)';
+    setTimeout(function() {
+      stat.style.background = 'transparent';
+    }, 200);
+  });
+});
