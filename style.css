@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --navy: #0D1B2A;
-  --navy-deep: #0A1628;
+  --navy: #132D4A;
+  --navy-deep: #0F2640;
   --gold: #B8943F;
   --gold-q: rgba(184,148,63,0.6);
   --warm: #FAFAF8;
@@ -213,44 +213,36 @@ ul { list-style: none; }
   .stats { flex-direction: column; gap: 20px; }
 }
 
-/* STICKY BACK BAR — insight articles only */
-.back-bar {
+
+/* FLOATING BACK PILL — insight articles only */
+.back-pill {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 44px;
-  background: rgba(10,22,40,0.95);
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background: var(--navy);
+  border: 1px solid rgba(250,250,248,0.12);
+  border-radius: 24px;
+  padding: 10px 20px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-top: 1px solid rgba(255,255,255,0.06);
-  display: flex;
-  align-items: center;
-  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-.back-bar__inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 0 var(--gut);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.back-pill:hover {
+  border-color: rgba(250,250,248,0.3);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
-.back-bar__link {
+.back-pill__text {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(250,250,248,0.5);
-  text-decoration: none;
+  color: var(--gold);
   transition: color 0.2s;
-  padding: 8px 0;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
 }
-.back-bar__link:hover { color: var(--gold); }
-
-/* Extra bottom padding on pages with back-bar */
-.back-bar ~ .footer { padding-bottom: 44px; }
+.back-pill:hover .back-pill__text { color: #fff; }
