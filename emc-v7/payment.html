@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Payment — EdgeMeter</title>
+<meta name="description" content="Settlement happens at the meter.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+.cap-fab{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:var(--navy-deep,#0d1f3a);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,0.25);z-index:1000;transition:transform .15s ease,box-shadow .15s ease;text-decoration:none;}
+.cap-fab:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,0.3);}
+@media(max-width:640px){.cap-fab{width:52px;height:52px;bottom:18px;right:18px;}}
+</style>
+</head><body>
+
+<nav class="nav nav--dark"><div class="nav__inner"><a href="index.html" class="nav__logo"><img src="logo.png" alt="Edge Meter Corp"></a><div class="nav__links"><a href="index.html">Home</a><a href="about.html">About</a><a href="approach.html">Approach</a><a href="insights.html">Insights</a><a href="contact.html" class="nav__cta">Get in touch</a></div><button class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></nav>
+
+<!-- HERO -->
+<section class="hero"><div class="hero__inner">
+<p class="eyebrow fade-up" style="margin-bottom:18px;">Capabilities · Payment</p>
+<h1 class="hero__headline fade-up">Settlement happens <em>at the meter.</em></h1>
+<p class="hero__sub fade-up">Bank transfer, mobile money, card. Whatever rail the customer already uses. The meter knows when the payment clears and acts on it.</p>
+</div></section>
+
+<!-- SECTION A -->
+<section class="section"><div class="container">
+<p class="eyebrow fade-up">How it works</p>
+<p class="section__sub fade-up" style="margin-top:14px;">Direct integration with bank and mobile-money APIs. No middleware tier between the rail and the device.<br><br>Reconciliation at the meter. Settlement state is held on the device, not in a billing system catching up overnight.<br><br>STS-compliant for prepaid markets. Token injection automated at the edge.<br><br>Works with what's there. Mobile money first, bank rails second, card third — in whichever order the market needs.</p>
+
+</div></section>
+
+<!-- SECTION B -->
+<section class="section section--alt"><div class="container">
+<p class="eyebrow fade-up">Why it matters</p>
+<p class="section__sub fade-up" style="margin-top:14px;">Most prepaid systems break the payment chain into four hops: customer pays, vendor confirms, token issues, customer keys it in. Each hop is a failure point.</p>
+<p class="section__sub fade-up" style="margin-top:18px;font-style:italic;">We collapse it to one. The customer pays. The meter turns on.</p>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="footer__grid">
+<div><div class="footer__brand"><img src="logo.png" alt=""><span>Edge Meter Corp</span></div><p class="footer__tagline">The meter sees everything. Now your systems can too.</p></div>
+<div><p class="footer__head">Company</p><ul class="footer__links"><li><a href="about.html">About</a></li><li><a href="approach.html">Approach</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><p class="footer__head">Capabilities</p><ul class="footer__links"><li><a href="data.html">Data</a></li><li><a href="edge.html">Edge</a></li><li><a href="operations.html">Operations</a></li><li><a href="payment.html">Payment</a></li><li><a href="ai.html">AI</a></li></ul></div>
+<div><p class="footer__head">Contact</p><ul class="footer__links"><li><a href="mailto:info@edgemetercorp.com">info@edgemetercorp.com</a></li></ul></div>
+</div><div class="footer__bottom"><p class="footer__copy">&copy; 2026 Edge Meter Corp. All rights reserved.</p><p class="footer__addr">2251 N. Rampart Blvd #128, Las Vegas, NV 89128</p></div></footer>
+
+<a href="index.html#capabilities" class="cap-fab" aria-label="Back to capabilities" title="Back to capabilities"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a>
+<script src="main.js"></script>
+</body></html>

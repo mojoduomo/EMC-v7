@@ -1,48 +1,85 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><link rel="stylesheet" href="style.css"><link rel="icon" type="image/png" href="logo.png"><title>Edge Meter Corp</title></head><body>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>EdgeMeter — The meter sees everything</title>
+<meta name="description" content="A meter that records electricity, settles payments, and streams structured data. Every event in JSON to the systems you already run.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="logo.png">
+</head><body>
+
 <nav class="nav nav--dark"><div class="nav__inner"><a href="index.html" class="nav__logo"><img src="logo.png" alt="Edge Meter Corp"></a><div class="nav__links"><a href="index.html" class="active">Home</a><a href="about.html">About</a><a href="approach.html">Approach</a><a href="insights.html">Insights</a><a href="contact.html" class="nav__cta">Get in touch</a></div><button class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></nav>
 
+<!-- HERO -->
 <section class="hero"><div class="hero__inner">
-<p class="eyebrow fade-up" style="margin-bottom:18px;">The Protocol Shift</p>
-<h1 class="hero__headline fade-up">Every smart meter on the grid speaks a language <em>AI cannot read.</em></h1>
-<p class="hero__sub fade-up">DLMS was designed for batch reads. MQTTS was designed for machine intelligence. EMC meters satisfy every legacy procurement requirement while delivering real-time, AI-native structured data that the existing protocol stack cannot produce.</p>
+<p class="eyebrow fade-up" style="margin-bottom:18px;">EdgeMeter</p>
+<h1 class="hero__headline fade-up">The meter sees everything. <em>Now your systems can too.</em></h1>
+<p class="hero__sub fade-up">Every event — voltage, load, outage, tamper, payment — streamed live in JSON to the systems you already run. Designed in the United States. Assembled where you need it.</p>
 <div class="fade-up" style="display:flex;gap:14px;flex-wrap:wrap;">
-<a href="approach.html" class="btn--ghost">See how it works <svg viewBox="0 0 14 14"><path d="M1 7h12M8 3l4 4-4 4"/></svg></a>
-<a href="contact.html" class="btn--ghost-gold">Speak with us <svg viewBox="0 0 14 14"><path d="M1 7h12M8 3l4 4-4 4"/></svg></a>
+<a href="approach.html" class="btn--ghost-gold">How it's built <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+<a href="contact.html" class="btn--ghost">Get in touch <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
 </div>
-<div class="stats fade-up">
-<div class="stat"><div class="stat__num">5</div><div class="stat__label">Software workarounds to make a 1993 protocol usable today</div></div>
-<div class="stat"><div class="stat__num">0</div><div class="stat__label">AI pipelines that can ingest DLMS binary</div></div>
-<div class="stat"><div class="stat__num">1</div><div class="stat__label">Protocol change to make every future procurement vendor-agnostic</div></div>
+
+<div class="stats">
+<a href="approach.html" class="stat fade-up"><div class="stat__num">3</div><div class="stat__label">Functions, one device</div><span class="stat__read">Read →</span></a>
+<a href="data.html" class="stat fade-up"><div class="stat__num">0</div><div class="stat__label">Middleware to your systems</div><span class="stat__read">Read →</span></a>
+<a href="payment.html" class="stat fade-up"><div class="stat__num">1</div><div class="stat__label">Path from payment to power</div><span class="stat__read">Read →</span></a>
 </div>
+
 </div></section>
 
-<section class="section section--dark"><div class="container">
-<p class="eyebrow fade-up" style="margin-bottom:20px;color:rgba(184,148,63,0.5);">The current spec is a collection of known limitations</p>
-<div>
-<div class="villain fade-up"><p class="villain__quote">&ldquo;The tender specification asks for DLMS/COSEM compliance. It does not ask for intelligence. No one noticed.&rdquo;</p><a href="ai-data-platform.html" class="villain__link">Read: AI Data Platform &rarr;</a></div>
-<div class="villain fade-up"><p class="villain__quote">&ldquo;The grid operator issues a disconnect command and waits. The meter receives it on its next scheduled poll &mdash; hours later, sometimes days.&rdquo;</p><a href="device-control.html" class="villain__link">Read: Device Control &rarr;</a></div>
-<div class="villain fade-up"><p class="villain__quote">&ldquo;The meter knows who pays on time, how much, and how often. No bank, insurer, or credit bureau has ever been able to read it.&rdquo;</p><a href="financial-identity.html" class="villain__link">Read: Financial Identity &rarr;</a></div>
-</div>
-</div></section>
-
+<!-- WHAT EDGEMETER DOES -->
 <section class="section"><div class="container">
-<p class="eyebrow fade-up" style="margin-bottom:10px;">The Leapfrog</p>
-<h2 class="section__title fade-up">Same procurement spec. Different generation.</h2>
-<div class="leap fade-up" style="margin-top:32px;">
-<div class="leap__col" style="background:var(--off);border:1px solid var(--rule);">
-<p class="leap__label" style="color:var(--light);">DLMS / Legacy</p>
-<div class="leap__items" style="color:var(--light);">Scheduled batch reads<br>Binary proprietary encoding<br>Middleware translation required<br>One-way token injection<br>Poll-based disconnect (hours)<br>No OTA firmware path</div>
+<p class="eyebrow fade-up">What EdgeMeter does</p>
+<h2 class="section__title fade-up">One device. Three jobs. <em>Done at the edge.</em></h2>
+<p class="section__sub fade-up">Each function is built into firmware on the device, designed against an operator outcome — losses found, settlement cleared, customer served — rather than a feature checklist.</p>
+<div class="pillars fade-up">
+<div class="pillar"><h3 class="pillar__title">Utility metering</h3><p class="pillar__body">Records electricity to ±0.5% accuracy in both directions. Detects tamper, manages load, responds to faults — all from the device. No round-trip required.</p></div>
+<div class="pillar"><h3 class="pillar__title">Real-time data</h3><p class="pillar__body">Every meter event leaves the device as structured data. Any modern system reads it directly: dashboards, billing, analytics, ML pipelines, spreadsheets. No middleware.</p></div>
+<div class="pillar"><h3 class="pillar__title">Payment terminal</h3><p class="pillar__body">Settles payments at the device. Works with the rails customers already use — bank transfer, mobile money, card. The meter knows when settlement clears.</p></div>
 </div>
-<div class="leap__arrow">&rarr;</div>
-<div class="leap__col" style="background:rgba(184,148,63,0.06);border:1px solid var(--gold-q);">
-<p class="leap__label" style="color:var(--gold);">EMC / MQTTS-native</p>
-<div class="leap__items" style="color:var(--mid);">Scheduled batch reads &mdash; <em style="color:var(--gold);">obsolete.</em> Every event publishes the moment it occurs.<br>Binary encoding &mdash; <em style="color:var(--gold);">eliminated.</em> Structured JSON, ML-ready from the device.<br>Middleware &mdash; <em style="color:var(--gold);">unnecessary.</em> Direct to pipeline.<br>One-way token &mdash; <em style="color:var(--gold);">superseded.</em> Bidirectional device control.<br>Poll-based disconnect &mdash; <em style="color:var(--gold);">replaced.</em> Instant command execution.<br>Static firmware &mdash; <em style="color:var(--gold);">upgraded.</em> OTA, continuously improving.</div>
-</div>
-</div>
-<p class="fade-up" style="margin-top:24px;font-size:14px;color:var(--light);max-width:520px;">Both architectures satisfy international metering standards and STS compliance. The difference is what happens above the spec floor.</p>
 </div></section>
 
-<section class="cta-band"><div class="container"><h2 class="cta-band__title fade-up">Same spec. <em>Different century.</em></h2><a href="contact.html" class="btn--ghost fade-up">Start the conversation <svg viewBox="0 0 14 14"><path d="M1 7h12M8 3l4 4-4 4"/></svg></a></div></section>
+<!-- CAPABILITIES -->
+<section class="section section--alt"><div class="container">
+<p class="eyebrow fade-up">Capabilities</p>
+<h2 class="section__title fade-up">Five layers. <em>One device.</em></h2>
+<div class="pillars fade-up" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));">
+<a href="data.html" class="pillar" style="text-decoration:none;color:inherit;"><h3 class="pillar__title">Data</h3><p class="pillar__body">Structured, live, native to the systems you run.</p></a>
+<a href="edge.html" class="pillar" style="text-decoration:none;color:inherit;"><h3 class="pillar__title">Edge</h3><p class="pillar__body">Critical operations on the device. No cloud dependency.</p></a>
+<a href="operations.html" class="pillar" style="text-decoration:none;color:inherit;"><h3 class="pillar__title">Operations</h3><p class="pillar__body">Run the fleet from one screen. From anywhere.</p></a>
+<a href="payment.html" class="pillar" style="text-decoration:none;color:inherit;"><h3 class="pillar__title">Payment</h3><p class="pillar__body">Settlement at the meter. On the rails customers use.</p></a>
+<a href="ai.html" class="pillar" style="text-decoration:none;color:inherit;"><h3 class="pillar__title">AI</h3><p class="pillar__body">Every event is training data the moment it lands.</p></a>
+</div>
+</div></section>
 
-<footer class="footer"><div class="footer__grid"><div><div class="footer__brand"><img src="logo.png" alt=""><span>Edge Meter Corp</span></div><p class="footer__tagline">Every smart meter on the grid speaks a language AI cannot read. We built the fix.</p></div><div><p class="footer__head">Company</p><ul class="footer__links"><li><a href="about.html">About</a></li><li><a href="approach.html">Approach</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><p class="footer__head">Capabilities</p><ul class="footer__links"><li><a href="ai-data-platform.html">AI Data Platform</a></li><li><a href="device-control.html">Device Control</a></li><li><a href="payment-terminal.html">Payment Terminal</a></li><li><a href="financial-identity.html">Financial Identity</a></li></ul></div><div><p class="footer__head">Contact</p><ul class="footer__links"><li><a href="mailto:info@edgemetercorp.com">info@edgemetercorp.com</a></li></ul></div></div><div class="footer__bottom"><p class="footer__copy">&copy; 2026 Edge Meter Corp. All rights reserved.</p><p class="footer__addr">2251 N. Rampart Blvd #128, Las Vegas, NV 89128</p></div></footer>
-<script src="main.js"></script></body></html>
+<!-- SPECIFICATIONS -->
+<section class="section"><div class="container">
+<p class="eyebrow fade-up">Specifications</p>
+<h2 class="section__title fade-up">Built to spec. <em>Built to last.</em></h2>
+<div class="pillars fade-up" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+<div class="pillar"><h3 class="pillar__title">Accuracy</h3><p class="pillar__body">±0.5% active energy. ANSI C12.20 Class 0.5.</p></div>
+<div class="pillar"><h3 class="pillar__title">Connectivity</h3><p class="pillar__body">Wi-Fi mesh and BLE. Cellular on the H2 2026 roadmap.</p></div>
+<div class="pillar"><h3 class="pillar__title">Protocol</h3><p class="pillar__body">JSON over MQTTS. No proprietary head-end.</p></div>
+<div class="pillar"><h3 class="pillar__title">Edge compute</h3><p class="pillar__body">Tamper detection and load profiling on the device.</p></div>
+<div class="pillar"><h3 class="pillar__title">Settlement</h3><p class="pillar__body">Direct integration with bank and mobile-money rails.</p></div>
+<div class="pillar"><h3 class="pillar__title">Field life</h3><p class="pillar__body">Ten years. Thirty thousand relay cycles.</p></div>
+<div class="pillar"><h3 class="pillar__title">Compliance</h3><p class="pillar__body">FCC Part 15. IP68 per IEC 60529. STS-compliant.</p></div>
+</div>
+</div></section>
+
+<!-- CTA -->
+<section class="cta-band"><div class="container">
+<h2 class="cta-band__title fade-up">Same spec. <em>Different century.</em></h2>
+<a href="contact.html" class="btn--ghost-gold fade-up">Get in touch <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="footer__grid">
+<div><div class="footer__brand"><img src="logo.png" alt=""><span>Edge Meter Corp</span></div><p class="footer__tagline">The meter sees everything. Now your systems can too.</p></div>
+<div><p class="footer__head">Company</p><ul class="footer__links"><li><a href="about.html">About</a></li><li><a href="approach.html">Approach</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><p class="footer__head">Capabilities</p><ul class="footer__links"><li><a href="data.html">Data</a></li><li><a href="edge.html">Edge</a></li><li><a href="operations.html">Operations</a></li><li><a href="payment.html">Payment</a></li><li><a href="ai.html">AI</a></li></ul></div>
+<div><p class="footer__head">Contact</p><ul class="footer__links"><li><a href="mailto:info@edgemetercorp.com">info@edgemetercorp.com</a></li></ul></div>
+</div><div class="footer__bottom"><p class="footer__copy">&copy; 2026 Edge Meter Corp. All rights reserved.</p><p class="footer__addr">2251 N. Rampart Blvd #128, Las Vegas, NV 89128</p></div></footer>
+
+<script src="main.js"></script>
+</body></html>
