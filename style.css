@@ -112,7 +112,7 @@ ul { list-style: none; }
 /* TEAM */
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px,3vw,36px); }
 .team-card { text-align: center; }
-.team-card__photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 3px; margin-bottom: 14px; background: var(--off); }
+.team-card__photo { width: min(200px, 62%); aspect-ratio: 3/4; object-fit: cover; border-radius: 3px; margin: 0 auto 16px; background: var(--off); }
 .team-card__name { font-size: 15px; font-weight: 500; color: var(--navy); margin-bottom: 3px; }
 .team-card__title { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; color: var(--light); text-transform: uppercase; }
 .team-card__bio { font-size: 14px; color: var(--mid); line-height: 1.6; margin-top: 10px; max-width: 260px; margin-left: auto; margin-right: auto; }
